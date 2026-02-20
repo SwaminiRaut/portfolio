@@ -5,10 +5,11 @@ import { Folder, Briefcase, Database, Lightbulb, Check, ExternalLink, Github, Do
 import emailjs from "@emailjs/browser";
 
 export default function Home() {
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!form.current) return;
 
     emailjs
       .sendForm(
@@ -20,7 +21,7 @@ export default function Home() {
       .then(
         () => {
           alert("Message sent successfully!");
-          form.current.reset();
+          form.current?.reset();
         },
         (error) => {
           alert("Failed to send message. Try again.");
