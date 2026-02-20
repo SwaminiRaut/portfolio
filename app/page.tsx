@@ -34,7 +34,7 @@ export default function Home() {
         <div className="ml-36 m-4 mb-2">
           <h1 className="text-2xl font-bold">Swamini Raut</h1>
         </div>
-        <div className="flex justify-evenly items-center w-5xl">
+        <div className="flex flex-col md:flex-row justify-evenly items-center w-5xl">
           <a href="#hero" className="font-bold hover:underline">Hero</a>
           <a href="#about" className="font-bold hover:underline">About</a>
           <a href="#skills" className="font-bold hover:underline">Skills</a>
@@ -44,24 +44,24 @@ export default function Home() {
         </div>
       </div>
       <main className="flex flex-col justify-center items-center">
-        <section className="h-screen bg-gradient-to-r from-gray-900 to-purple-900 w-full flex justify-center items-center" id="hero">
+        <section className="min-h-screen md:h-screen bg-gradient-to-r from-gray-900 to-purple-900 w-full flex justify-center items-center" id="hero">
           <div>
-            <h1 className="text-6xl font-extrabold">Swamini Raut</h1>
-            <h2 className="text-4xl font-bold text-cyan-500 mt-4 mb-4 ">Full Stack Developer | Aspiring Software Engineer</h2>
+            <h1 className="text-3xl md:text-6xl font-extrabold">Swamini Raut</h1>
+            <h2 className="text-xl md:text-4xl font-bold text-cyan-500 mt-4 mb-4 ">Full Stack Developer | Aspiring Software Engineer</h2>
             <p className="text-2xl mb-4">Building scalable and user-friendly web applications from frontend to backend.</p>
             <a href="#projects"><button className="h-8 bg-cyan-600 text-white rounded-sm pl-4 pr-4 font-bold mr-4 hover:bg-cyan-800">View Projects</button></a>
             <a href="/SwaminiRaut_InternshalaResume (1).pdf" download><button className="h-8 bg-white text-black rounded-sm pl-4 pr-4 font-bold hover:bg-gray-500">Download Resume</button></a>
           </div>
-          <div className="w-[300px] h-[300px] rounded-full overflow-hidden shadow-lg ml-10 outline-2 outline-white">
+          <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden shadow-lg ml-10 outline-2 outline-white">
             <Image src={"/s.jpeg"} alt="swamini" width={300} height={300} className="object-cover w-full h-full" />
           </div>
         </section>
-        <section className="h-screen flex justify-evenly items-center bg-gray-900 w-full pr-7 pl-10 py-24 px-10" id="about">
+        <section className="min-h-screen md:h-screen flex flex-col md:flex-row justify-evenly items-center bg-gray-900 w-full pr-7 pl-10 py-24 px-10" id="about">
           <div className="flex flex-col gap-4">
             <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
               About Me
             </h2>
-            <h1 className="text-4xl font-bold" >Hello, I'm Swamini Raut</h1>
+            <h1 className="text-xl md:text-4xl font-bold" >Hello, I'm Swamini Raut</h1>
             <h3 className="text-2xl font-semibold text-gray-300">Software Engineer</h3>
             <p className="text-[18px]">I'm an Electronics & Telecommunication Engineering student and aspiring Software Engineer with a strong foundation in Full Stack Web Development.</p>
             <p className="text-[18px]">I specialize in building modern, responsive, and scalable applications using React.js, Next.js, Node.js, Express.js, and MongoDB. My experience spans frontend development, backend architecture, and database design, allowing me to develop complete end-to-end solutions.</p>
@@ -70,7 +70,7 @@ export default function Home() {
             <p className="text-[18px]">To begin my career as a Software Engineer where I can contribute to impactful projects, work across diverse technologies, and grow in a challenging and innovation-driven environment.</p>
           </div>
           <div className="flex flex-col gap-12">
-            <div className="flex justify-evenly items-center w-[500px]">
+            <div className="flex flex-col md:flex-row justify-evenly items-center w-full md:w-[500px]">
               <div className="w-[220px] h-[100px] border-2 border-gray-700/60 rounded-xl flex flex-col justify-center items-start pl-4 bg-gradient-to-r from-gray-950 to-gray-800 gap-3 hover:border-purple-500 
 hover:scale-105 transition duration-300 shadow-lg shadow-black">
                 <h1 className="text-[18px] font-bold">Projects Built</h1>
@@ -88,7 +88,7 @@ hover:scale-105 transition duration-300 shadow-lg shadow-black">
                 </div>
               </div>
             </div>
-            <div className="flex justify-evenly items-center w-[500px]">
+            <div className="flex flex-col md:flex-row justify-evenly items-center w-full md:w-[500px]">
               <div className="w-[220px] h-[100px] border-2 border-gray-700/60 rounded-xl flex flex-col justify-center iitems-start pl-4 bg-gradient-to-r from-gray-950 to-gray-800 gap-3 hover:border-purple-500 
 hover:scale-105 transition duration-300 shadow-lg shadow-black">
                 <h1 className="text-[18px] font-bold">Tech Stack</h1>
@@ -108,11 +108,11 @@ hover:scale-105 transition duration-300 shadow-lg shadow-black">
             </div>
           </div>
         </section>
-        <section className="h-screen flex flex-col items-center bg-gradient-to-b from-gray-900 via-gray-900 to-purple-950 w-full" id="skills">
-          <h1 className="text-[35px] font-bold mb-10 mt-28 text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Skills</h1>
+        <section className="min-h-screen md:h-screen flex flex-col items-center bg-gradient-to-b from-gray-900 via-gray-900 to-purple-950 w-full" id="skills">
+          <h1 className="text-[35px] font-bold mb-10 mt-28 text-xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Skills</h1>
           <div className="flex flex-col justify-center items-center">
             <div className="flex justify-center items-center mb-10 gap-10">
-              <div className="w-[400px] h-[170px] border-2 border-gray-700/60 shadow-lg shadow-black flex flex-col justify-center bg-gradient-to-r from-gray-950 to-gray-800 rounded-3xl p-5 hover:scale-105
+              <div className="w-full md:w-[400px] h-[170px] border-2 border-gray-700/60 shadow-lg shadow-black flex flex-col justify-center bg-gradient-to-r from-gray-950 to-gray-800 rounded-3xl p-5 hover:scale-105
 transition duration-300">
                 <h1 className="ml-3 text-[20px] font-bold">Frontend Development</h1>
                 <div className="flex flex-wrap gap-3 mt-4 ml-3">
@@ -142,7 +142,7 @@ transition duration-300">
                   </div>
                 </div>
               </div>
-              <div className="w-[400px] h-[170px] border-2 border-gray-700/60 shadow-lg shadow-black flex flex-col bg-gradient-to-r from-gray-950 to-gray-800 rounded-3xl p-5 hover:scale-105
+              <div className="w-full md:w-[400px] h-[170px] border-2 border-gray-700/60 shadow-lg shadow-black flex flex-col bg-gradient-to-r from-gray-950 to-gray-800 rounded-3xl p-5 hover:scale-105
 transition duration-300">
                 <h1 className="ml-3 text-[20px] font-bold mt-2">Backend Development</h1>
                 <div className="flex flex-wrap gap-3 mt-4 ml-3">
@@ -162,7 +162,7 @@ transition duration-300">
               </div>
             </div>
             <div className="flex justify-center items-center gap-10">
-              <div className="w-[400px] h-[170px] border-2 border-gray-700/60 shadow-lg shadow-black flex flex-col justify-center bg-gradient-to-r from-gray-950 to-gray-800 rounded-3xl p-5 hover:scale-105
+              <div className="w-full md:w-[400px] h-[170px] border-2 border-gray-700/60 shadow-lg shadow-black flex flex-col justify-center bg-gradient-to-r from-gray-950 to-gray-800 rounded-3xl p-5 hover:scale-105
 transition duration-300">
                 <h1 className="ml-3 text-[20px] font-bold">Database & Tools</h1>
                 <div className="flex flex-wrap gap-3 mt-4 ml-3">
@@ -184,7 +184,7 @@ transition duration-300">
                   </div>
                 </div>
               </div>
-              <div className="w-[400px] h-[170px] border-2 border-gray-700/60 shadow-lg shadow-black flex flex-col justify-center bg-gradient-to-r from-gray-950 to-gray-800 rounded-3xl p-5 hover:scale-105
+              <div className="w-full md:w-[400px] h-[170px] border-2 border-gray-700/60 shadow-lg shadow-black flex flex-col justify-center bg-gradient-to-r from-gray-950 to-gray-800 rounded-3xl p-5 hover:scale-105
 transition duration-300">
                 <h1 className="ml-3 text-[20px] font-bold">Core CS Concepts</h1>
                 <div className="flex flex-wrap gap-3 mt-4 ml-3">
@@ -211,7 +211,7 @@ transition duration-300">
         </section>
         <section className="flex flex-col justify-center items-center bg-gray-900 w-full" id="projects">
           <h1 className="mt-4 mb-4 text-[35px] font-bold bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">Projects</h1>
-          <div className="w-[1200px] border-2 border-gray-700/60 rounded-3xl p-4 shadow-lg shadow-black hover:border-purple-700">
+          <div className="w-full md:w-[1200px] border-2 border-gray-700/60 rounded-3xl p-4 shadow-lg shadow-black hover:border-purple-700">
             <h1 className="text-[25px] font-bold">YouTube Clone - Smart Streaming Platform</h1>
             <p className="text-gray-300">A full-stack video streaming platform with multilingual comment translation, tier-based subscription control, Razorpay payment integration, gesture-based custom video player, and real-time VoIP screen-sharing capabilities.
             </p>
@@ -272,7 +272,7 @@ transition duration-300">
               </div>
             </div>
           </div>
-          <div className="flex justify-evenly gap-7 w-[1200px] mt-7 mb-7">
+          <div className="flex flex-col md:flex-row justify-evenly gap-7 w-full md:w-[1200px] mt-7 mb-7">
             <div className="border-2 border-gray-700/60 rounded-3xl p-4 shadow-lg shadow-black hover:border-purple-700">
               <h1 className="text-[25px] font-bold">AI Resume Builder</h1>
               <p className="text-gray-300">A dynamic resume generation web application that allows users to input personal and professional details, preview their resume in real-time, and download a professionally formatted PDF instantly.</p>
@@ -379,7 +379,7 @@ transition duration-300">
             </div>
           </div>
         </section>
-        <section className="h-screen flex justify-center items-center bg-gradient-to-b from-gray-900 to-purple-950/20 w-full" id="resume">
+        <section className="min-h-screen md:h-screen flex justify-center items-center bg-gradient-to-b from-gray-900 to-purple-950/20 w-full" id="resume">
           <div className="flex flex-col justify-center items-center w-[1000px] border-[1px] border-purple-800/30 rounded-3xl gap-1.5 shadow-[0_0_60px_rgba(168,85,247,0.18)] bg-[#14141f] hover:scale-[1.02] transition duration-300 hover:shadow-[0_0_70px_rgba(168,85,247,0.25)]">
             <h1 className="text-[35px] font-bold bg-gradient-to-r from-purple-400 to-purple-700 bg-clip-text text-transparent mt-7">Resume</h1>
             <p className="text-[20px] text-gray-400">Want a detailed overview of my experience and technical skills?</p>
@@ -395,7 +395,7 @@ transition duration-300">
             </div>
           </div>
         </section>
-        <section className="h-screen flex flex-col justify-center items-center bg-purple-950/20 w-full" id="contact">
+        <section className="min-h-screen md:h-screen flex flex-col justify-center items-center bg-purple-950/20 w-full" id="contact">
           <div className="flex flex-col justify-center items-center w-[900px] border-1 border-purple-900 gap-4 rounded-3xl pt-10 pb-12">
             <h1 className="text-[35px] font-bold bg-gradient-to-b from-pink-400  to-purple-600 bg-clip-text text-transparent">Contact Me</h1>
             <p className="text-[18px] text-gray-300">Have a project in mind? I'd love to hear from you.</p>
@@ -408,7 +408,7 @@ transition duration-300">
           </div>
         </section>
         <footer className="flex flex-col w-full bg-purple-950/20">
-          <div className="flex justify-evenly w-full">
+          <div className="flex flex-col md:flex-row justify-evenly w-full">
             <div className="flex flex-col gap-4">
               <h1 className="text-[20px] font-bold">Contact</h1>
               <div className="flex text-gray-300">
@@ -445,7 +445,7 @@ transition duration-300">
               <a href="#contact" className="hover:underline">Contact</a>
             </div>
           </div>
-          <div className="flex justify-evenly mt-7">
+          <div className="flex flex-col md:flex-row justify-evenly mt-7">
             <div className="flex">
               <Copyright className="mr-3" />
               <p>2026 Swamini Dinesh Raut.</p>
