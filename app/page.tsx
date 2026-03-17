@@ -411,7 +411,7 @@ transition duration-300">
           </div>
         </section>
         <footer className="flex flex-col w-full bg-purple-950/20">
-          <div className="flex flex-col md:flex-row justify-evenly w-full">
+          <div className="flex flex-col md:flex-row justify-evenly w-full ml-5 md:ml-0">
             <div className="flex flex-col gap-4">
               <h1 className="text-[20px] font-bold">Contact</h1>
               <div className="flex text-gray-300">
@@ -448,11 +448,15 @@ transition duration-300">
               <a href="#contact" className="hover:underline">Contact</a>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-evenly mt-7">
-            <div className="flex">
-              <Copyright className="mr-3" />
-              <p>2026 Swamini Dinesh Raut.</p>
-              <p className="text-gray-400">All rights reserved</p>
+          <div className="flex flex-col md:flex-row justify-evenly mt-7 ml-5 md:ml-0">
+            <div className="flex flex-col md:flex-row">
+              <div className="flex">
+                <Copyright className="mr-3" />
+                <p>2026 Swamini Dinesh Raut.</p>
+              </div>
+              <div>
+                <p className="text-gray-400">All rights reserved</p>
+              </div>
             </div>
             <div className="text-[18px] font-semibold">
               <p>Crafting code & creativity</p>
