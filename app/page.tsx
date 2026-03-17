@@ -461,7 +461,7 @@ transition duration-300">
             <div className="text-[18px] font-semibold">
               <p>Crafting code & creativity</p>
             </div>
-            <div className="flex">
+            <div className="flex mb-5 md:mb-0">
               <p className="mr-3">Privacy Policy</p>
               <div className="flex">
                 <p>Terms</p>
